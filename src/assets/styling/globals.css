@@ -8,14 +8,15 @@
 }
 
 
-html body {
+body {
     /*noinspection CssUnresolvedCustomProperty*/
     font-family: var(--font-geist-sans), sans-serif;
     color: hsl(var(--foreground));
     background-color: hsl(var(--background));
 
     width: 100vw;
-    height: 100dvh;
     max-height: 100dvh;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--nav-height) 1fr;
 }

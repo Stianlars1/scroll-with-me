@@ -1,12 +1,15 @@
 .header {
   width: 100vw;
   height: var(--nav-height);
+  position: fixed;
   border-bottom: 1px solid hsl(var(--border));
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--page-padding);
-
+  z-index: 100;
+  background-color: hsl(var(--background) / 0.6);
+  backdrop-filter: blur(12px);
 
   .code {
     font-family: var(--font-geist-mono);

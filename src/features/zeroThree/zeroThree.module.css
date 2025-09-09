@@ -1,0 +1,78 @@
+.container {
+  width: 100vw;
+  height: 100dvh;
+}
+.container .headerSection {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container .headerSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/03/03_header.jpg");
+  background-size: cover;
+  z-index: -2;
+  filter: brightness(0.75);
+}
+.container .headerSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle, transparent 0%, hsl(var(--background)/0.5) 50%, hsl(var(--background)) 100%);
+  filter: brightness(1);
+}
+.container .headerSection .heroText {
+  font-family: var(--font-geist-mono);
+  font-size: 200px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: url("/03/03_header.jpg") center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  mix-blend-mode: plus-lighter;
+  background-size: 150%;
+}
+
+.heroSection {
+  width: 100vw;
+  height: max-content;
+}
+.heroSection .section {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100dvh;
+}
+.heroSection .section .heroImageOne {
+  width: 100vw;
+  height: 100dvh;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+.heroSection .section .heroParagraph {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-kerning: none;
+  font-size: 100px;
+  opacity: 1;
+}
+
+.footerSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=zeroThree.module.css.map */

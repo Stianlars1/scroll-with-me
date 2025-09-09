@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100vh;
+
+  section {
+    place-content: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  .section {
+    height: 100vh;
+    min-width: 100%;
+    position: relative;
+    .scrolldown {
+      position: absolute;
+      bottom: 15%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .lineSection {
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    user-select: none;
+    pointer-events: none;
+
+    .line {
+      position: relative;
+      margin: 0 auto;
+      background-color: hsl(var(--foreground));
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .firstSection {
+    place-content: center;
+
+    .headerText {
+      margin: 0 auto;
+      max-width: 700px;
+      text-align: center;
+    }
+  }
+}
